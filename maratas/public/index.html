@@ -1,0 +1,386 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+	<meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Rose Ann Maratas</title>
+
+    <link rel="stylesheet" href="css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="css/font-awesome.min.css"/>
+    <link rel="stylesheet" href="css/animate.css"/>
+
+		<link rel="stylesheet" href="css/style.css" />
+
+    <script type="text/javascript" src="js/jquery-1.11.2.min.js"></script>
+    <script type="text/javascript" src="js/bootstrap.min.js"></script>
+    <script type="text/javascript" src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCZXJBVDf7R4JqmSpopVPoduIGWx1IwpBM"></script>
+    <script type="text/javascript" src="js/plugins.js"></script>
+
+	</head>
+	<body>
+	<div class="svg-wrap">
+      <svg width="64" height="64" viewBox="0 0 64 64">
+        <path id="arrow-left" d="M26.667 10.667q1.104 0 1.885 0.781t0.781 1.885q0 1.125-0.792 1.896l-14.104 14.104h41.563q1.104 0 1.885 0.781t0.781 1.885-0.781 1.885-1.885 0.781h-41.563l14.104 14.104q0.792 0.771 0.792 1.896 0 1.104-0.781 1.885t-1.885 0.781q-1.125 0-1.896-0.771l-18.667-18.667q-0.771-0.813-0.771-1.896t0.771-1.896l18.667-18.667q0.792-0.771 1.896-0.771z"></path>
+      </svg>
+
+      <svg width="64" height="64" viewBox="0 0 64 64">
+        <path id="arrow-right" d="M37.333 10.667q1.125 0 1.896 0.771l18.667 18.667q0.771 0.771 0.771 1.896t-0.771 1.896l-18.667 18.667q-0.771 0.771-1.896 0.771-1.146 0-1.906-0.76t-0.76-1.906q0-1.125 0.771-1.896l14.125-14.104h-41.563q-1.104 0-1.885-0.781t-0.781-1.885 0.781-1.885 1.885-0.781h41.563l-14.125-14.104q-0.771-0.771-0.771-1.896 0-1.146 0.76-1.906t1.906-0.76z"></path>
+      </svg>
+    </div>
+
+
+    <!-- MAIN CONTENT -->
+
+   <div class="container-fluid">
+
+    <!-- HEADER -->
+
+    <section id="header">
+
+      <!-- NAVIGATION -->
+      <nav class="navbar navbar-fixed-top navbar-default bottom">
+        <div class="container">
+          <div class="navbar-header">
+            <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#menu">
+              <span class="sr-only">Toggle navigation</span>
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+            </button>
+            <a class="navbar-brand" href="#header">Rose Ann Maratas</a>
+          </div><!-- /.navbar-header -->
+
+          <div class="collapse navbar-collapse" id="menu">
+            <ul class="nav navbar-nav navbar-right">
+              <li><a href="#header">Home</a></li>
+              <li><a href="#about">About</a></li>              
+              <li><a href="#designs">Designs</a></li>
+              <li><a href="#info">Info</a></li>
+            </ul>
+          </div> <!-- /.navbar-collapse -->
+        </div> <!-- /.container -->
+      </nav>
+
+      <!-- SLIDER -->
+      <div class="header-slide">
+        <section>
+          <div id="loader" class="pageload-overlay" data-opening="M 0,0 0,60 80,60 80,0 z M 80,0 40,30 0,60 40,30 z">
+            <svg xmlns="http://www.w3.org/2000/svg" width="100%" height="100%" viewBox="0 0 80 60" preserveAspectRatio="none">
+              <path d="M 0,0 0,60 80,60 80,0 Z M 80,0 80,60 0,60 0,0 Z"/>
+            </svg>
+          </div> <!-- /.pageload-overlay -->
+          
+          <div class="image-slide bg-fixed">
+            <div class="overlay">
+              <div class="container">
+                <div class="row">
+                  <div class="col-md-12">
+
+                    <div class="slider-content">
+                      <h1></h1>
+                      <p>At Maratas Hotel, we pride ourselves on offering exceptional service tailored to your every need. From the moment you arrive, our attentive staff ensures your comfort with a personal touch, making your stay seamless and memorable. Experience hospitality that goes beyond expectations, where warmth and professionalism create the perfect home away from home.</p>
+                    </div>
+
+                  </div> <!-- /.col-md-12 -->
+                </div> <!-- /.row -->
+              </div> <!-- /.container -->
+            </div> <!-- /.overlay -->
+          </div> <!-- /.image-slide -->
+
+          <nav class="nav-slide">
+            <a class="prev" href="#prev">
+              <span class="icon-wrap">
+                <svg class="icon" width="32" height="32" viewBox="0 0 64 64">
+                  <use xlink:href="#arrow-left">
+                </svg>
+              </span>
+              <div>
+                <span>Prev Photo</span>
+                <h3>...</h3>
+                <p>...</p>
+                <img alt="Previous thumb">
+              </div>
+            </a>
+            <a class="next" href="#next">
+              <span class="icon-wrap">
+                <svg class="icon" width="32" height="32" viewBox="0 0 64 64">
+                  <use xlink:href="#arrow-right">
+                </svg>
+              </span>
+              <div>
+                <span>Next Photo</span>
+                <h3>...</h3>
+                <p>...</p>
+                <img alt="Next thumb">
+              </div>
+            </a>
+          </nav>
+        </section>
+
+        <script type="text/javascript">
+        var dataHeader = [
+                            {
+                              bigImage :"images/slide-1.jpg",
+                              title : "Hospitality",
+                            },
+                            {
+                              bigImage :"images/slide-2.jpg",
+                              title : "Fashionable",
+                            },
+                            {
+                              bigImage :"images/slide-3.jpg",
+                              title : "Elegance",
+                            }
+                        ],
+            loaderSVG = new SVGLoader(document.getElementById('loader'), {speedIn : 300, speedOut : 300, easingIn : mina.easeinout});
+            loaderSVG.show()
+        </script>
+
+      </div><!-- /.header-slide -->
+    </section>
+
+    <!-- HEADER END -->
+
+
+    <!-- ABOUT -->
+
+    <section id="about" class="light">
+      <header class="title">
+        <h2>About <span>Us</span></h2>
+        <p>At Maratas Hotel, we offer more than just a place to stay. We provide an unparalleled experience where comfort, luxury, and elegance come together in perfect harmony. Our dedication to exceptional service and attention to detail ensures that every guest feels welcomed, pampered, and at ease.</p>
+      </header>
+    
+      <div class="container">
+        <div class="row table-row">
+          <div class="col-sm-6 hidden-xs">
+            <div class="section-content">
+              <div class="big-image" style="background-image:url(images/slide-1.jpg)"></div>
+            </div>
+          </div>
+    
+          <div class="col-sm-6">
+            <div class="section-content">
+              <div class="about-content left animated" data-animate="fadeInLeft">
+                <div class="about-icon"><i class="fa fa-code"></i></div>
+                <div class="about-detail">
+                  <h4>Exceptional Hospitality</h4>
+                  <p>At Maratas Hotel, every guest is treated like family. Our team is committed to providing personalized service, ensuring a seamless and memorable stay from check-in to departure.</p>
+                </div>
+              </div>
+    
+              <div class="about-content left animated" data-animate="fadeInLeft">
+                <div class="about-icon"><i class="fa fa-desktop"></i></div>
+                <div class="about-detail">
+                  <h4>Modern Comforts</h4>
+                  <p>Our hotel blends the best of modern design and classic elegance, with fully equipped, state-of-the-art facilities to meet the needs of every traveler, from business professionals to leisure guests.</p>
+                </div>
+              </div>
+    
+              <div class="about-content left animated" data-animate="fadeInLeft">
+                <div class="about-icon"><i class="fa fa-cube"></i></div>
+                <div class="about-detail">
+                  <h4>Luxurious Design</h4>
+                  <p>Step into a world of sophistication, where every corner of Maratas Hotel is carefully curated to reflect our commitment to luxury, comfort, and elegance, making your stay truly unforgettable.</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div> <!-- /.row table-row -->
+      </div> <!-- /.container -->
+    </section>
+    
+	
+	    <!-- PORTFOLIO -->
+
+    <section id="designs" class="light">
+  <header class="title">
+    <h2>Our Designs</h2>
+    <p>At Maratas Hotel, our designs reflect the beauty and elegance of our hospitality. Explore our carefully crafted spaces that embody luxury and comfort, creating memorable experiences for every guest.</p>
+  </header>
+
+  <div class="container-fluid">
+    <div class="row">
+      <ul id="filters" class="list-inline">
+        <li data-filter="all" class="filter">All Designs</li>
+        <li data-filter=".branding" class="filter">Elegant Ambiance</li>
+        <li data-filter=".graphic" class="filter">Contemporary Style</li>
+        <li data-filter=".printing" class="filter">Artful Design</li>
+        <li data-filter=".video" class="filter">Luxurious Spaces</li>
+      </ul>
+    </div>
+  </div>
+  
+
+    <div class="row">
+      <div class="container-portfolio">
+        <!-- DESIGN OBJECT -->
+        <script type="text/javascript">
+        var portfolio = [
+            {
+              category : "branding",
+              image : "images/p-1.png",
+              title : "Elegant <span>Ambiance</span>",
+              link : "#none",
+              text : "Experience the elegant ambiance that defines our hotel, blending comfort with sophistication."
+            },
+            {
+              category : "graphic",
+              image : "images/p-2.png",
+              title : "Contemporary <span>Style</span>",
+              link : "#none",
+              text : "Discover the contemporary style that captures the essence of modern luxury in every corner."
+            },
+            {
+              category : "graphic",
+              image : "images/p-3.png",
+              title : "Artful <span>Design</span>",
+              link : "#none",
+              text : "Step into artful designs that reflect the rich culture and beauty of our surroundings."
+            },
+            {
+              category : "video",
+              image : "images/p-4.png",
+              title : "Luxurious <span>Spaces</span>",
+              link : "#none",
+              text : "Dive into luxurious spaces that offer tranquility and relaxation, perfect for your escape."
+            },
+            {
+              category : "branding",
+              image : "images/p-5.png",
+              title : "Charming <span>Interiors</span>",
+              link : "#none",
+              text : "Feel the charm of our interiors, meticulously designed to create a welcoming atmosphere."
+            },
+            {
+              category : "printing",
+              image : "images/p-6.png",
+              title : "Breathtaking <span>Views</span>",
+              link : "#none",
+              text : "Enjoy breathtaking views that enhance the overall experience of your stay."
+            },
+            {
+              category : "printing",
+              image : "images/p-7.png",
+              title : "Tranquil <span>Retreat</span>",
+              link : "#none",
+              text : "Explore the tranquil retreat that our hotel offers, designed for ultimate relaxation."
+            },
+            {
+              category : "printing",
+              image : "images/p-8.png",
+              title : "Sophisticated <span>Details</span>",
+              link : "#none",
+              text : "Experience sophisticated details that reflect our commitment to quality and service."
+            }
+        ];
+        </script>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+<section id="info" class="dark">
+  <header class="title">
+    <h2>Our <span>Expertise</span></h2>
+    <p>At Maratas Hotel, we specialize in creating unforgettable experiences through exquisite service and luxurious surroundings.</p>
+  </header>
+
+  <div class="container experties">
+    <div class="row">
+      <div class="col-md-6">
+        <div class="skill">
+          <ul class="skill-bar list-unstyled">
+            <li><span class="percentage" data-value="95%"></span><em>Hospitality</em></li>
+            <li><span class="percentage" data-value="90%"></span><em>Service Excellence</em></li>
+            <li><span class="percentage" data-value="80%"></span><em>Guest Experience</em></li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="col-md-6">
+        <div class="skill">
+          <ul class="skill-bar list-unstyled">
+            <li><span class="percentage" data-value="88%"></span><em>Interior Design</em></li>
+            <li><span class="percentage" data-value="85%"></span><em>Culinary Arts</em></li>
+            <li><span class="percentage" data-value="70%"></span><em>Event Management</em></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </div> <!-- /.container -->
+</section>
+
+<section class="separator blue">
+  <div class="container">
+    <div class="row">
+      <div class="col-md-3 col-sm-6 col-xs-6">
+        <div class="counter animated" data-animate="fadeInUp" data-delay="0">
+          <div class="counter-icon">
+            <i class="fa fa-users"></i>
+          </div>
+          <div class="counter-content">
+            <span class="value" data-from="0" data-to="1000"></span>
+            <small>Happy Guests</small>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-md-3 col-sm-6 col-xs-6">
+        <div class="counter animated" data-animate="fadeInUp" data-delay="500">
+          <div class="counter-icon">
+            <i class="fa fa-award"></i>
+          </div>
+          <div class="counter-content">
+            <span class="value" data-from="0" data-to="15"></span>
+            <small>Awards Won</small>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-md-3 col-sm-6 col-xs-6">
+        <div class="counter animated" data-animate="fadeInUp" data-delay="1000">
+          <div class="counter-icon">
+            <i class="fa fa-clipboard"></i>
+          </div>
+          <div class="counter-content">
+            <span class="value" data-from="0" data-to="200"></span>
+            <small>Events Held</small>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-md-3 col-sm-6 col-xs-6">
+        <div class="counter animated" data-animate="fadeInUp" data-delay="1500">
+          <div class="counter-icon">
+            <i class="fa fa-envelope"></i>
+          </div>
+          <div class="counter-content">
+            <span class="value" data-from="0" data-to="5000"></span>
+            <small>Emails Sent</small>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+
+    <section id="footer">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-12 text-center">
+            <p>Made BY <i class="fa fa-heart"></i> <a href="">Rose Ann Maratas</a></p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+   </div><!-- /.container-fluid -->
+    
+    <!-- SCRIPT -->
+    <script type="text/javascript" src="js/main.js"></script>
+	</body>
+</html>
